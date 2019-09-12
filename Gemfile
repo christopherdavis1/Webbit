@@ -39,6 +39,7 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'carrierwave', '~> 2.0', '>= 2.0.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 gem 'valid_url', '~> 0.0.4'
+gem 'inline_svg', '~> 1.5', '>= 1.5.2'
 
 
 group :development do

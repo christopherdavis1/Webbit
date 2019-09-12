@@ -26,6 +26,18 @@
     <%= form.text_field :url %>
   </div>
 
+  <!-- Submission Image Block -->
+  <div class="field">
+    <%= form.label :submission_image %>
+    <%= form.file_field :submission_image %>
+  </div>
+
+  <!-- Submission Video Block -->
+  <div class="field">
+    <%= form.label :submission_video %>
+    <%= form.file_field :submission_video %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

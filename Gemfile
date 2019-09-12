@@ -36,6 +36,8 @@ end
 
 # Custom Gems
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'carrierwave', '~> 2.0', '>= 2.0.1'
+gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 
 
 group :development do

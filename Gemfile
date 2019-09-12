@@ -35,6 +35,7 @@ end
 
 
 # Custom Gems
+gem 'devise', '~> 4.7', '>= 4.7.1'
 
 
 group :development do

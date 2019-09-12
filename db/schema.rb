@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_12_041754) do
+ActiveRecord::Schema.define(version: 2019_09_12_042605) do
 
   create_table "models", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2019_09_12_041754) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "submission_image"
     t.string "submission_video"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_submissions_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,4 +41,5 @@ ActiveRecord::Schema.define(version: 2019_09_12_041754) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "submissions", "users"
 end
